@@ -1,0 +1,1 @@
+﻿public record Transaction(string From, string To, long Amount);
