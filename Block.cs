@@ -1,0 +1,1 @@
+﻿record Block(string ParentHash, string Data, string Hash);

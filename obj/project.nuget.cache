@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+zof00XLx4xbGUhd6JttSAEaI/GeeEaD5w/dGu9ahkH44b0cWyWako/5mBGkIC1XqU1Mv92ng8f4C4yJJ9ZF+w==",
+  "success": true,
+  "projectFilePath": "C:\\LITROOT\\Projects\\dotNet\\blockchain\\blockchain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maksym.turenko\\.nuget\\packages\\crc32.net\\1.2.0\\crc32.net.1.2.0.nupkg.sha512",
+    "C:\\Users\\maksym.turenko\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\maksym.turenko\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
