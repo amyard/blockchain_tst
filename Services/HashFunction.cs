@@ -4,11 +4,6 @@ using Force.Crc32;
 
 namespace blockchain;
 
-public interface IHashFunction
-{
-    public string GetHash(string data);
-}
-
 public class SHA256Hash : IHashFunction
 {
     public string GetHash(string data)

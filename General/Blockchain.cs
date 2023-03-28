@@ -4,17 +4,28 @@ using blockchain;
 class Blockchain : IEnumerable<Block>
 {
     private readonly IHashFunction _hashFunction;
+    private readonly BlockchainBuilder _builder;
     private readonly List<Block> _blocks = new();
 
     public Blockchain(IHashFunction hashFunction)
     {
+        _builder = new BlockchainBuilder(hashFunction, null);
         _hashFunction = hashFunction;
     }
 
+    public Block BuildBlock(string data)
+    {
+        var tail = _blocks.LastOrDefault();
+        var block = _builder.AddBlock(data);
+
+        return block;
+    }
+    
     // check the valid block
     public void AddBlock(Block block)
     {
         var tail = _blocks.LastOrDefault();
+        
         if (block.ParentHash == tail?.Hash)
         {
             var expectedHash = _hashFunction.GetHash(block.ParentHash + block.Data);
